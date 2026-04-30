@@ -9,6 +9,9 @@ import linksRoutes from './routes/links';
 dotenv.config();
 
 const app = express();
+app.get("/", (req, res) => {
+  res.send("Tá funcionando 🚀");
+});
 const PORT = process.env.PORT || 3001;
 
 // Garante que o diretório data e o arquivo links.json existam
